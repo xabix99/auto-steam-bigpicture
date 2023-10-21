@@ -12,7 +12,7 @@ This Python script is designed to automate the process of switching to Steam's B
 
 Edit `main.py` to fit your needs:
 
-- **STEAM_PATH**: Path to your Steam executable (`steam.exe`).
+- **STEAM_PATH**: Path to your Steam executable `steam.exe`.
 
 - **DISPLAY_STEAM**: The display you want to use for Steam's Big Picture Mode. This should be specified as a numeric value corresponding to the desired display.
 
@@ -26,7 +26,12 @@ Edit `main.py` to fit your needs:
 
 - **AUDIO_SOURCE_MAIN**: The audio source you want to use for all other applications.
 
-Run create_exe.py
+## How to run
+Assuming that you have python and pyinstaller already installed and you configured `main.py`:
+
+1.Run create_exe.py.
+
+2.Add generated `AutomatedBigPicture.exe` file to your taskbar or wherever you want and run it.
 
 ## How the Script Works
 
