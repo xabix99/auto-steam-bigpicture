@@ -50,7 +50,10 @@ The script performs the following steps:
 
 9. Turns off Bluetooth.
 
+## Contributing
 
-Please note that this script is designed for Windows and may require administrative privileges to execute certain commands.
+Contributions to this project are welcome! If you encounter any issues or have suggestions for improvements, please create an issue or submit a pull request.
 
-**Disclaimer:** Be cautious when running scripts that modify system settings. Double-check your configuration and execute the script at your own risk.
+## License
+
+This project is licensed under the MIT License. Feel free to modify and distribute the code as per the terms of the license.
