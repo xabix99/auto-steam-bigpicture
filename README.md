@@ -8,11 +8,13 @@ This Python script is designed to automate the process of switching to Steam's B
 
 - **PyInstaller**
 
+- **PyGetWindow**
+
 ## Configuration
 
 Edit `main.py` to fit your needs:
 
-- **STEAM_PATH**: Path to your Steam executable (`steam.exe`).
+- **STEAM_PATH**: Path to your Steam executable `steam.exe`.
 
 - **DISPLAY_STEAM**: The display you want to use for Steam's Big Picture Mode. This should be specified as a numeric value corresponding to the desired display.
 
@@ -26,29 +28,38 @@ Edit `main.py` to fit your needs:
 
 - **AUDIO_SOURCE_MAIN**: The audio source you want to use for all other applications.
 
-Run create_exe.py
+## How to run
+Assuming that you have python and pyinstaller already installed and you configured `main.py`:
+
+1.Run create_exe.py.
+
+2.Add generated `AutomatedBigPicture.exe` file to your taskbar or wherever you want and run it.
 
 ## How the Script Works
 
 The script performs the following steps:
 
-1. Turns on Bluetooth (using the PowerShell script).
+1. Gets all current windows position
 
-2. Sets the primary display to the one specified for Steam.
+2. Turns on Bluetooth (using the PowerShell script).
 
-3. Sets the default sound device to the one specified for Steam.
+3. Sets the primary display to the one specified for Steam.
 
-4. Adjusts the system volume to the desired level for Steam.
+4. Sets the default sound device to the one specified for Steam.
 
-5. Launches Steam in Big Picture Mode.
+5. Adjusts the system volume to the desired level for Steam.
 
-6. Monitors the Steam process and waits until it exits.
+6. Launches Steam in Big Picture Mode.
 
-7. Restores the primary display to the original one.
+7. Monitors the Steam process and waits until it exits.
 
-8. Resets the default sound device and system volume to their initial settings.
+8. Restores the primary display to the original one.
 
-9. Turns off Bluetooth.
+9. Resets the default sound device and system volume to their initial settings.
+
+10. Turns off Bluetooth.
+
+11. Restores all windows state
 
 ## Contributing
 
