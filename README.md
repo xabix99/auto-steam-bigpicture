@@ -10,7 +10,7 @@ This Python script is designed to automate the process of switching to Steam's B
 
 ## Configuration
 
-Change to fit your needs:
+Edit `main.py` to fit your needs:
 
 - **STEAM_PATH**: Path to your Steam executable (`steam.exe`).
 
