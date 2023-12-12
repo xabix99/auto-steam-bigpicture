@@ -3,7 +3,7 @@ import shutil
 import subprocess
 import os.path
 
-path = os.path.join(os.path.dirname(__file__))
+path = os.path.dirname(os.path.realpath(__file__)) 
 main_exe = os.path.join(f"{path}", 'main.exe')
 main_spec = os.path.join(f"{path}", 'main.spec')
 dist_path = os.path.join(f"{path}", 'dist')
